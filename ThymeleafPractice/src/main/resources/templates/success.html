@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Loginstyle.css">
+</head>
+<body>
+    <h1>ログインが成功しました。</h1>
+    <p th:text="${userEmail}"></p>
+    <p th:text="${userPassword}"></p>
+    
+    <ul th:each = "t:${array}">
+		<li th:text = "${t}"></li>
+	</ul>
+	
+	<p th:text="${alice.name}"></p>
+    <p th:text="${alice.age}"></p>
+</body>
+</html>
